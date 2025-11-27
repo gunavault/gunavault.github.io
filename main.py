@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 # --- Configuration ---
 LINKS_FILE = "links.json"
 OUTPUT_HTML_FILE = "index.html"
-BASE_URL = "https://gunavault.github.io/onet-platform/"
+BASE_URL = "https://gunavault.github.io/"
 # Update the BASE_URL to your actual GitHub Pages domain (e.g., https://johndoe.github.io/my-short-links/)
 # Note: For this client-side hack to work, the URL must look like:
 # BASE_URL?c=shortcode (e.g., https://base.url/?c=about)
@@ -182,7 +182,7 @@ def main():
     print("------------------------------------------")
     
     # IMPORTANT: Check if BASE_URL is configured
-    if BASE_URL.startswith("https://YOUR_GITHUB_USERNAME"):
+    if BASE_URL.startswith("https://https://gunavault.github.io/"):
         print("\n[CRITICAL WARNING] Please update the BASE_URL in link_manager.py to your actual GitHub Pages domain before proceeding.")
         return
 
